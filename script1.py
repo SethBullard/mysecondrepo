@@ -1,16 +1,16 @@
 #### PROBLEM 1 ####
-# Correc the mistakes and produce the following output:
+# Correct the mistakes and produce the following output:
 # Johnny, the total of your purchase is $1,688.70
 
-def calcTotal(amt,tax,name):
-    mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${total:,.2f}")
+def calcTotal(amt,thetaxtax,name):
+    mytotal = amt * (1 + thetax)
+    print(f"{name}, the total of your purchase is ${mytotal:,.2f}")
 
-myname = 'Johnny'
-price = 1,560
-thetax = 8.25%
+name = 'Johnny'
+price = 1560
+thetax = .0825
 
-calcTotal(thetax,price,name)
+calcTotal(price,thetax,name)
 
 
 
@@ -21,7 +21,8 @@ calcTotal(thetax,price,name)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(i)
+    if type(i) == int:
+        print(i)
 
 
 
@@ -54,3 +55,11 @@ my_layout = Layout(title='Baylor University',geo_scope='usa')
 fig = {'data':data, 'layout':my_layout}
 
 offline.plot(fig,filename='Baylor.html')
+
+#Create a virtual environment
+#Step 1 - create the environemnt
+#MAC: python3 -m venv
+#Step 2 - Activate the VE
+#MAC: source myvenv/bin/activate
+#Step 3: Install third party library or module
+#in this case: pip3 install matplotlib(or whatever library it is)
